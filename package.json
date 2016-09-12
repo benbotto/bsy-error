@@ -1,0 +1,29 @@
+{
+  "name": "bsy-error",
+  "version": "1.0.0",
+  "description": "A collection of Error specializations with an Express error handler.",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benbotto/bsy-error.git"
+  },
+  "author": "Ben Botto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benbotto/bsy-error/issues"
+  },
+  "homepage": "https://github.com/benbotto/bsy-error#readme",
+  "dependencies": {
+    "glob": "^7.0.6",
+    "insulin": "^1.0.7"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-jasmine-nodejs": "^1.5.4"
+  }
+}
