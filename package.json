@@ -1,7 +1,7 @@
 {
   "name": "bsy-error",
-  "version": "1.0.0",
-  "description": "A collection of Error specializations with an Express error handler.",
+  "version": "1.0.1",
+  "description": "A collection of Error specializations.",
   "main": "index.js",
   "scripts": {
     "test": "grunt"
