@@ -57,7 +57,7 @@ function ErrorHandlerProducer() {
       console.error(err.message);
       console.error(err.stack);
 
-      res.status(500).json({error: 'Internal server error.'});
+      res.status(500).json({detail: 'Internal server error.'});
     }
   }
 

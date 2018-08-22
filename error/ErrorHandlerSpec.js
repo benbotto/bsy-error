@@ -85,7 +85,7 @@ describe('ErrorHandler test suite.', function() {
       errorHandler.handleError(error, null, res);
 
       expect(res.status).toHaveBeenCalledWith(500);
-      expect(res.json.calls.argsFor(0)[0].error).toBe('Internal server error.');
+      expect(res.json.calls.argsFor(0)[0].detail).toBe('Internal server error.');
 
       // message and stack are logged.
       expect(console.error.calls.argsFor(0)[0]).toBe(error.message);
