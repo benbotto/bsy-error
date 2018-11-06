@@ -2,9 +2,10 @@
   "name": "bsy-error",
   "version": "1.1.1",
   "description": "A collection of Error specializations.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "grunt"
+    "build": "rm -rf dist && ./node_modules/.bin/tsc",
+    "test": "node_modules/.bin/ts-node ./node_modules/.bin/jasmine --config=./jasmine.json --reporter=jasmine-console-reporter"
   },
   "repository": {
     "type": "git",
@@ -16,14 +17,12 @@
     "url": "https://github.com/benbotto/bsy-error/issues"
   },
   "homepage": "https://github.com/benbotto/bsy-error#readme",
-  "dependencies": {
-    "glob": "^7.0.6",
-    "insulin": "^1.0.7"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-contrib-jshint": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-jasmine-nodejs": "^1.5.4"
+    "@types/jasmine": "~2.8.11",
+    "jasmine": "~3.3.0",
+    "jasmine-console-reporter": "~3.1.0",
+    "ts-node": "~7.0.1",
+    "typescript": "~3.1.6"
   }
 }
