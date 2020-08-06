@@ -7,13 +7,9 @@ export class PaymentRequiredError extends DetailedError {
   /**
    * Create the Error instance with a user-supplied message.
    * @param message The description of the error.
-   * @param code An optional error code.
    */
-  constructor(
-    message: string = 'Payment required.',
-    code: string = 'PAYMENT_REQUIRED_ERROR',
-  ) {
-    super(message, code);
+  constructor(message: string = 'Payment required.') {
+    super(message, 'PAYMENT_REQUIRED_ERROR');
 
     this.name = 'PaymentRequiredError';
   }

@@ -16,11 +16,4 @@ describe('PaymentRequiredError', function() {
     expect(err.message).toBe('Payment required.');
     expect(err.detail).toBe('Payment required.');
   });
-
-  it('checks the custom code.', function() {
-    const err = new PaymentRequiredError('message here', 'code here');
-    expect(err.message).toBe('message here');
-    expect(err.detail).toBe('message here');
-    expect(err.code).toBe('code here');
-  });
 });
