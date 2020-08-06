@@ -5,7 +5,9 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "rm -rf dist && ./node_modules/.bin/tsc",
-    "test": "node_modules/.bin/ts-node ./node_modules/.bin/jasmine --config=./jasmine.json --reporter=jasmine-console-reporter"
+    "test": "node_modules/.bin/ts-node ./node_modules/.bin/jasmine --config=./jasmine.json --reporter=jasmine-console-reporter",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run test && npm run clean && npm run build"
   },
   "repository": {
     "type": "git",
